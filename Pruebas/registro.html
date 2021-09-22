@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./estilos.css">
+    <!-- Boostrap config -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bienvenid@s a TuriMed</title>
+  </head>
+  <body>
+    <header>
+        <nav class="horizontal_navbar">
+            <li class="lista">
+                <a href="index.html" class="irA_registro_usuario">
+                    <img class="landing_logo" src="assets/img/Logo TuriMed.png" alt="turimed.com">
+                </a>
+            </li>
+            <li class="lista" hidden="true">
+                <a class="irA_registro _usuario" href="registro.html">
+                    <button class="boton_registro_usuario">Registrarse</button>
+                </a>
+            </li>
+        </nav>
+    </header>
+    <h3 class="main-title">Registro de usuario</h3>
+
+    <div class="card mb-3 form-card" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./assets/img/Logo TuriMed.png" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <form id="form_nuevo_usuario">
+              <div class="mb-3">
+                <label for="dato_nombre_usuario" class="form-label"
+                  >Nombre de usuario</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dato_nombre_usuario"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="dato_edad_usuario" class="form-label"
+                  >Edad</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="dato_edad_usuario"
+                  aria-describedby="emailHelp"
+                />
+                
+              </div>
+              <div class="mb-3">
+                <label for="dato_contrasena" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="dato_contrasena"
+                />
+              </div>
+              <div id="emailHelp" class="form-text aviso-form">
+                No compartiremos tu información con nadie más
+              </div>
+              <button type="submit" class="btn btn-primary col-8" id="enviar_registro">Registrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
