@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        document.write("Este tx es de js enviado desde head <br><br>")
+
+        function suma(A , B){
+            var C
+            C = A + B
+            console.log(A + " " + B + "=" + C)
+            return C
+            
+        }
+    </script>
+    
+<body>
+
+    <script>
+        document.write("Esto es Javascript");
+        document.write("<br><br> El resultado de la suma es: "+ suma(10,20));
+        alert("El resultado es"+ suma(10,20))
+
+        alert("Hacer segunda operacion " + suma(100+1))
+    </script>
+    
+</body>
+</html>
