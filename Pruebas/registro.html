@@ -18,6 +18,7 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./validaciones.js"></script>
     <title>Bienvenid@s a TuriMed</title>
   </head>
   <body>
@@ -46,14 +47,17 @@
           <div class="card-body">
             <form id="form_nuevo_usuario">
               <div class="mb-3">
-                <label for="dato_nombre_usuario" class="form-label"
-                  >Nombre de usuario</label
-                >
+                <label 
+                  for="dato_nombre_usuario"
+                  class="form-label">
+                    Nombre de usuario
+                </label>
                 <input
                   type="text"
                   class="form-control"
                   id="dato_nombre_usuario"
                   aria-describedby="emailHelp"
+                  onchange="validar_nombre_usuario(value)"
                 />
               </div>
               <div class="mb-3">
@@ -61,10 +65,11 @@
                   >Edad</label
                 >
                 <input
-                  type="number"
+                  type="text"
                   class="form-control"
                   id="dato_edad_usuario"
                   aria-describedby="emailHelp"
+                  onchange="validar_edad_usuario(value)"
                 />
                 
               </div>
@@ -76,6 +81,7 @@
                   type="password"
                   class="form-control"
                   id="dato_contrasena"
+                  onchange="validar_contrasena(value)"
                 />
               </div>
               <div id="emailHelp" class="form-text aviso-form">

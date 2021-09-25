@@ -1,45 +1,29 @@
-/*alert("Hola, desde codynamico")
 
 
-function validar_nombre_usuario(string) {
-    
+function validar_nombre_usuario(nombre) {
+    let validado = nombre.trim().split(' ').map((element) => {
+        return element[0].toUpperCase() + element.slice(1)
+    }).join(' ')
+    return nombre === validado ? true : false
 }
 
-function validar_edad_usuario (edad) {
-
+function validar_edad_usuario(edad) {
+    let number = Number(edad)
+    return number >= 13 && number < 110 ? true : false
 }
 
-/* >=6 Caracteres */
-/* Alfanumerico de de la A a la Z,o, 0 al 9 "No combinados" */
-/* retorna verdadero si cumple condiciones, si no, falso 
-
-function validar_contrasena (string) {
-    dato_contrasena = 0
-    if (dato_contrasena);
-}
-*/
-
-
-function calcularedad (){
-    var edad = document.getElementById("edad").value;
-
-    if (edad == 18) {
-        alert("Esta canal es permitido para ti")
-    }else {
-        alert("Prohivido para ti")
-    }
-
+//Paula: Constraseña, debe tener minimo 6 caracteres (max 16), permite Números y letras, NO permite otros caracteres 
+function validar_contrasena (password) {
+    // let dato_contrasena = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{7,}$/
+    let dato_contrasena = /^[0-9a-zA-Z]{6,}$/
+        if(dato_contrasena.test(password)){
+            return true
+        } else {
+            return false
+        }
 }
 
+module.exports.validar_nombre_usuario = validar_nombre_usuario;
+module.exports.validar_edad_usuario = validar_edad_usuario;
+module.exports.validar_contrasena = validar_contrasena;
 
-
-
-/*
-var edad = 14;
-
-if (edad == 18) {
-    alert("Esta canal es permitido para ti")
-}else {
-    alert("Prohivido para ti")
-}
-*/
