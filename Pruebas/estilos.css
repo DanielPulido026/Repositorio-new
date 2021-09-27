@@ -1,21 +1,24 @@
 /* Estilos CSS de index.html*/
 
-html {
+/* html {
+    scroll-behavior: smooth;
     background: url(assets/img/hombre.jpg);
-
+    position: sticky;
     background-size: cover;
-  }
+  } */
 
 
 body {
     margin: auto;
     padding: 0;
+    
+    
 }
 header{
     display: inline-block;
     width: 100%;
     height: 100px;
-    background-color: #f0f0f0;
+    background: url(assets/img/hombre.jpg);
 }
 #horizontal_navbar {
     width: 100%;
@@ -24,6 +27,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 #irA_registro_usuario {
@@ -32,7 +36,7 @@ header{
 
 #landing_logo {
     width: 20%;
-    
+    background-color: lightskyblue;
 }
 
 .lista {
