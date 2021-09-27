@@ -1,0 +1,58 @@
+<!-- EXTENCIONES NECESARIAS
+    ESLint
+    Live Server
+    Prettier - Code formatter
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos javaScript</title>
+</head>
+<body>
+    <H1>Fundamentos javaScript</H1>
+
+<script>
+    var hola = "hola mundo" /*Variable de ambito global*/
+    console.log(hola);      /*Variable de ambito de bloque*/
+
+    let hello = "hello word"
+    console.log(hello);
+
+    console.log(window);
+    console.log(window.hola);
+    console.log(window.hello);
+
+    console.log("************************var******************************************");
+    //Ambito de bloque - var
+    var musica = "Rock";
+    console.log("Variables musica antes del Bloque",musica);
+
+    {
+    var musica = "pop";
+    console.log("Variables musica dentro del Bloque",musica);
+    }
+
+    console.log("Variables musica despues del Bloque",musica);
+
+
+    console.log("************************let******************************************");
+
+    //Ambito de bloque - let
+    let musica2 = "Rock";
+    console.log("Variables musica antes del Bloque",musica2);
+
+    {
+    let musica2 = "pop";
+    console.log("Variables musica dentro del Bloque",musica2);
+    }
+
+    console.log("Variables musica despues del Bloque",musica2);
+
+</script>
+
+</body>
+</html>
