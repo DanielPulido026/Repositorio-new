@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantes</title>
+</head>
+<body>
+    <h1> CADENAS DE TEXTO</h1>
+
+    
+    <script>
+/* Objeto ->> COLECCION DE INFORMACION - Tiene dos propiedades:
+
+    + Propiedades ->> Definen el objeto "Longitud,ancho, largo"
+    + Metodos     ->> Acciones de los objetos "" terminan en ()         
+*/
+    let nombre ="Daniel"
+    let apellido = "Pulido"
+    let saludo = new String("Hola mundo"); // ->> YA CASI NO SE UTILIZA
+    let lorem = "       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem impedit harum illum.        "
+    
+    console.log(nombre, apellido, saludo);
+    
+    // PROPIEDADES
+    console.log(
+        nombre.length,
+        apellido.length,          // ->> Longitud de caracteres
+        saludo.length,
+    // METODOS
+        nombre.toUpperCase(),     // ->> MAYUSCULAS
+        apellido.toLowerCase(),   // ->> minusculas
+        lorem.includes("dolor"),    
+        lorem.includes("chao"),   // ->> Buscar un datos
+
+        lorem,
+        lorem.trim()              // ->> Quita los espacios del inicio y final del parrafo
+    );
+
+    </script>
+
+    
+
+</body>
+</html>
