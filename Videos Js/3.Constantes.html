@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantes</title>
+</head>
+<body>
+    <h1> FUNDAMENTOS Javascript</h1>
+    <script>
+
+        let a;  
+        const PI = 3.145; // Crear variables - ((variables que no cambian durante el flujo de mi programa))
+    //  const NUEVE; // No permite declarar una const sin valor
+    //  PI = 3.24 ->> no permite cambiar el valor de la variable solo en valores primitivos
+
+        console.log(PI);
+
+        a = "Daniel";
+        console.log(a);
+
+        // Constantes ->> si me deja cambiar con valores COMPUESTOS (objetos,arrays,etc)
+        const objeto = {
+            nombre: "Daniel",
+            edad: 24
+        }
+
+        // OBJETOS Y ARREGLOS
+     /*  let objeto = {
+            nombre: "Daniel",
+            edad: 24
+        }
+    */
+        // Constantes ->> si me deja cambiar con valores COMPUESTOS (objetos,arrays,etc)
+        const colores = [
+                "Blanco, Negro, Azul, Amarillo"
+            ]
+
+    /*   let colores = [
+            "Blanco, Negro, Azul, Amarillo"
+        ]
+    */
+        console.log(objeto);
+        console.log(colores);
+
+        //Agregar un nuevo objeto
+        objeto.correo = "Danielcortes026@gmail.com"
+
+        //Agregar un nuevo dato en el arreglo
+        colores.push("Rojo")
+
+        console.log(objeto);
+        console.log(colores);
+
+    </script>
+</body>
+</html>
