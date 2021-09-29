@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concatenacion e interpolacion</title>
+</head>
+<body>
+    <h1> CONTATENACION e INTERPOLACION</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    
+    <script>
+
+    //CONCATENACION
+    let nombre = "Daniel";
+    let apellido = "Pulido";
+ 
+    let saludar = "Hola mi nombre es " + nombre + " " + apellido +".";
+    console.log(saludar);
+    
+    let ul3 = "<ul>";
+        ul3 += "<li>Primavera</li>";
+        ul3 += "<li>Verano</li>";
+        ul3 += "<li>Otoño</li>";
+        ul3 += "<li>Invierno</li>";
+    ul3 += "</ul>";
+
+    console.log(ul3);
+    
+    
+    /* INTERPOLACION
+    //template Spring
+    
+    backtick teclado inveitido ` ${nombre variable} $ {nombre variable}.
+    */
+    
+    let saludar2 = `Hola mi nombre es ${nombre} ${apellido}.` //Interpolacion
+    console.log(saludar2);
+    
+
+    let ul = "<ul> <li>Primavera</li> <li>Verano</li> <li>Otoño</li> <li>Invierno</li> </ul>" // con "", toca unir todo el texto
+    console.log(ul);
+
+    let ul2 = 
+    `
+    <ul>
+        <li>Primavera</li> 
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>`; //template Spring
+    console.log(ul2);
+
+    </script>
+
+</body>
+</html>

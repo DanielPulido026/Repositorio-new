@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUMBERS</title>
+</head>
+<body>
+    <h1> TIPO DE DATO NUMUMERO(NUMBERS)</h1>
+    
+    <script>
+        let a = 2;
+        let b = new Number(1);
+        let c = 7.155215
+        let d = "5.6454"
+
+        console.log(a,b);
+        console.log(c.toFixed(2));       // Metodo Redondear segun decimales requeridas
+        console.log(parseInt(c));        // Metodo traer solo la parte entera del numero
+        console.log(parseFloat(c));      // Metodo traer parte flotante del numero
+        console.log(typeof c, typeof d); // Verificar que tipo de dato es la variable
+
+        console.log(a + b);
+        console.log(c + d);
+        console.log(c + parseInt(d));    // Realizar un casting para sumar las dos variables pero solo la parte entera de mi float
+        console.log(c + parseFloat(d));  // Realizar un casting para sumar las dos variables
+
+        console.log(c + Number.parseInt(d));  // Se puede declarar con el .constructor
+        console.log(c + Number.parseFloat(d));
+
+    </script>
+
+</body>
+</html>
