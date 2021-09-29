@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOLEAN</title>
+</head>
+<body>
+    <h1> TIPO DE BOOLEAN(BOOL)</h1>
+
+    <!--Envian un dato TRUE   ---------------- Envian un dato FALSE
+        if (true)                                   if (false)
+        if ({})                                     if (null)
+        if ([])                                     if (undefined)
+        if (42)                                     if (0)
+        if ("foo")                                  if (-0)
+        if (new Date())                             if (0n)
+        if (-42)                                    if (NaN)
+        if (3.14)                                   if ("")
+        if (-3.14)
+        if (Infinity)
+        if (-Infinity)
+    -->
+    <!--OPERADOR LÓGICO AND, &&
+        +Si el primer objeto es falso, devuelve ese obejto
+            false && "dog"
+                // ↪ false
+            0 && "dog"
+                // ↪ 0
+    -->
+    
+    <script>
+
+        let verdadero = true;
+        let falso = false;
+
+        let v = Boolean(true);
+        let f = Boolean(false);
+
+        console.log(verdadero, falso);
+        console.log(typeof verdadero, typeof falso);  // TIPO DE DATO
+
+        console.log(Boolean(0));
+        console.log(Boolean([]));
+        console.log(Boolean({}));
+        console.log(Boolean(-1));
+        console.log(Boolean(NaN));
+        console.log(Boolean(null));
+        console.log(Boolean([5]));
+
+    </script>
+
+</body>
+</html>
