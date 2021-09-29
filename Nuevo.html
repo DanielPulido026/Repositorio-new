@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglo</title>
+</head>
+<body>
+    <script>
+        let registros1 = ["quiero","Zanahoria","Aguacate","Daniel","Juan","Felipe"];
+        let registros = [23,14,16,18,1,5]
+
+        ordenarArreglo(registros)
+
+        function ordenarArreglo(registros) {
+            console.log(registros1.sort());
+            console.log(registros.sort());
+
+            registros.sort((a, b) =>{
+                // Si los elementos son iguales devuelvo 0
+                if (a == b){
+                    return 0
+                }
+                // Si "a" debe ir ordenado antes que "b" entonces un numero menor que cero "-1"
+                if (a < b){
+                    return -1
+                }
+                // Si "a" debe ir ordenado despues de "b" entonces un numero mayor que cero "1"
+                return 1
+
+            });
+            console.log(registros);
+
+        }
+
+       </script>
+    
+</body>
+</html>
