@@ -1,0 +1,79 @@
+<!-- EXTENCIONES NECESARIAS
+    ESLint
+    Live Server
+    Prettier - Code formatter
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARREGLOS</title>
+</head>
+<body>
+    <H1>Arreglos en  javaScript</H1>
+
+    <p>Daniel Pulido Cortes</p>
+    <!--COLECCION DE ELEMENTOS
+        +strig
+        +number
+        +boolean
+        +null        ->
+        +underfined  ->
+        +Nan         ->
+    
+    -->
+<script>
+    let c;
+    const a = [];
+    const b =   [1, true, "Hola", null,c, 2-"hola",["A", "B", "C",[1 ,2 ,3]]]; // Cunjunto de elementos
+// Cohordenadas: 0,   1 ,   2   ,   3 ,4,   5     ,6   ..... 
+    console.log(a);
+    console.log(b);
+    console.log(b.length); // Devuelve el numero de elementos
+
+    console.log(b[2], b[1]);      // Llamar coherdenadas de un arreglo
+
+    console.log(b[6]);           // Llamar arreglo dentro de otro arreglo
+    console.log(b[6][2]);       // Llamar coherdenadas de un arreglo dentro de un arreglo
+
+    console.log(b[6][3][1]);   // LLamar cohordenadas de 3 arreglos
+
+
+    //EJ DE CREAR ---->>>> ARREGLOS
+
+    const d = Array.of("X" ,"Y" ,"Z" ,9 ,8 ,7);  // Array.of otra forma de realizar un arreglo
+    console.log(d);
+
+    const e = Array(20).fill("Daniel");         // Llenar un arreglo con un valor en especifico
+    console.log(e);
+
+    // YA NO SE UTILIZAN - ARREGLOS CON CONSTRUCTORES
+
+    const f = new Array();                     // Se puede inicializar el arreglo con un constructor
+    console.log(f);
+
+    const g = new Array(1, 2, 3, true, false);
+    console.log(g);
+
+    // LOS ARRAY TAMBIEN TIENEN METODOS
+
+    const colores = ["Amarillo", "Rojo", "Azul"];   //
+    console.log(colores);                          //
+    colores.push("Negro");                        // Metodo push, añadir un nuevo dato al arreglo -->> lo coloca siempre al final
+    console.log(colores);                        //   
+
+    colores.pop();
+    console.log(colores);                      // Metodo pop, me elimina el ultimo elemento del arreglo
+
+    colores.forEach(function(el, index){
+        console.log(`<li>${el}</li>`);                       //  Metodo forEach, pasa parametros de iteracion
+        console.log(`<li id="${index}">${el}</li>`);        //  Metodo forEach, pasa parametros de iteracion con id unico
+    });
+
+</script>
+
+</body>
+</html>
