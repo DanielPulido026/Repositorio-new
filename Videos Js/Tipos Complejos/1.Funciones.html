@@ -1,0 +1,96 @@
+<!-- EXTENCIONES NECESARIAS
+    ESLint
+    Live Server
+    Prettier - Code formatter
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES</title>
+</head>
+<body>
+    <H1>Funciones javaScript</H1>
+    <!--Bloques de codigo // con su propio contenido
+        + Se define una vez
+        + Reutilizar
+        + Recibir parametros
+        + Devolver valores
+    *Considerados como objetos
+    -->
+
+<script>
+    // Funcion declarada
+    function estoEsUnaFuncion(){
+        console.log("Uno");
+        console.log("Dos");
+        console.log("Tres");
+    }    
+    // Invocacion de la Formula
+    estoEsUnaFuncion()
+
+
+    // Retorna valores con variables
+    function unaFuncionQueDevuelveValor(){
+        console.log("Uno");
+        console.log("Dos");
+        console.log("Tres");
+        return "La funcion devuelve una cadena de texto"
+    }
+    let valorDeFuncion = unaFuncionQueDevuelveValor(); // ->> Declaro una variable para mostrar el valor retornado de la funcion.
+    console.log(valorDeFuncion);
+
+    // Retorna valores sin variables
+    function unaFuncionQueDevuelveValor1(){
+        console.log("Uno");
+        return 19               // ->> Muestra solo que esta antes de Return.
+        console.log("Dos");
+        console.log("Tres");
+        return "La funcion devuelve una cadena de texto"
+    }
+    let valorDeFuncion1 = unaFuncionQueDevuelveValor1();
+    console.log(valorDeFuncion1);
+
+    // ACEPTA PARAMETROS
+    // Llamando parametros desde invocacion
+    function saludar(nombre, edad){
+        console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años `)
+    }
+    saludar();
+    saludar("Daniel",23);    
+
+    // Asignado valores desde parametros
+    function saludar1(nombre = "Desconocido", edad = 0){
+        console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años `)
+    }
+    saludar1();
+
+    // Funciones Declaradas Vs funciones Expresadas
+
+    // Elevacion de funciones --> Hoisting
+    funcionDeclarada();
+
+    function funcionDeclarada(){
+        console.log("Esto es una funcion declarada puede invocarse en cualquier parte del codigo, incluso antes de la declaracion de la misma");
+    }
+
+    funcionDeclarada();
+
+    //Funcion Expresada o funcion anonima
+
+    funcionExpresada();
+
+    const funcionExpresada = function () {
+        console.log(`Esto es una funcion expresada,es decir, una funcion que se le ha 
+        asignado como valor una variable;si invocamos esta funcion antes
+        de su funcion Js nos dira...`)
+    }
+    funcionExpresada();
+
+</script>
+
+</body>
+</html>
