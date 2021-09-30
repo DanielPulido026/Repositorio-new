@@ -1,0 +1,11 @@
+.Container {
+    background-color:papayawhip ;
+    width: 80vw;
+    height: 2rem;
+}
+
+.ContainerInside {
+    width: 80%;
+    height: 20px;
+    background-color: hsla(71, 100%, 55%, 1);
+}
