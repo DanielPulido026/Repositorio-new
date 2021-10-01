@@ -1,0 +1,88 @@
+<!-- EXTENCIONES NECESARIAS
+    ESLint
+    Live Server
+    Prettier - Code formatter
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETOS</title>
+</head>
+<body>
+    <H1>Objetos en  javaScript</H1>
+
+    <p>Daniel Pulido Cortes</p>
+    <!--
+    -->
+<script>
+    
+    let a = new String("Hola");
+    //console.log(a);
+
+    const c = new Object();             // Crear objeto con constructor -->> YA NO SE UTILIZA
+    console.log(c);
+
+    const daniel = {                   // Diferentes propiedades o valores cualquier tipo de dato, incluyento una funcion
+        nombre: "Juan",                // + Datos primitivos   
+        apellido: "Pulido",              // + Datos complejos
+        edad: 23,
+        pasatiempo: ["Patinar","leer"],
+        soltero: true,
+
+        // objeto detro de un objeto
+        contacto: {
+            email: ["Danielcortes026@gmail.com","JuanCortes1202@hotmail.com"],
+            twitter: "@danielcortes026",
+            telefono: 2353253532
+        },
+        
+        // Funciones dentro de un objeto
+        saludar: function(){
+            console.log("Hola :)")
+        },
+
+        decirMiNombre: function(){             // "This" hace refencia al objeto a donde se encuentre
+            console.log(`Mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} de edad`)
+        }
+    }
+
+    // ACCEDER A LAS REFERENCIAS DE LOS OBJETOS []
+    console.log(daniel["nombre"]); // -->> Se puede acceder a los valores de objetos con los [], pero se recomientda acceder con el punto(.)
+    console.log(daniel["apellido"]);
+    console.log(daniel["contacto"]["email"]); // -->> ingresar al objeto que esta dentro del objeto
+
+    //console.log(daniel["saludar()"]);
+
+    /* ACCEDER A LAS REFERENCIAS DE LOS OBJETOS punto"."
+        + Dentro de un objeto a las VARIABLES se les llama => Atributos ó Propiedades
+        + Dentro de un objeto a las FUNCIONES se les llama => Metodos
+    */
+
+    console.log(daniel.nombre);               // Se accede a las atibutos del obejto con (.)
+    console.log(daniel.pasatiempo[0]);
+
+    console.log(daniel.contacto.twitter);
+    console.log(daniel.contacto.email);       
+    console.log(daniel.contacto.email[1]);   // Se accede al metodo"arreglo", por medio de una coordenada
+    
+    daniel.saludar();                        // Se accede a la funcion"Metodo" que esta dentro del objeto
+
+    daniel.decirMiNombre();                  // Acceder a la funcion con metodos this --> `backtick`
+
+    // METEDOS EN OBJETOS
+
+    console.log(Object.keys(daniel));       // Permite listar todas las llaves del objeto
+    console.log(Object.values(daniel));     // Permite acceder a todos los valores de arreglos y llaves del arreglo principal
+
+    console.log(daniel.hasOwnProperty("nombre"));     // Permite buscar su un atributo, se encuentra en el objeto "True o Falso"
+    console.log(daniel.hasOwnProperty("nacimiento"));
+
+
+</script>
+
+</body>
+</html>
