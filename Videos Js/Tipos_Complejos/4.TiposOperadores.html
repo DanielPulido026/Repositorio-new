@@ -53,23 +53,38 @@
 
     let i =1
     i = 1 + 2;      // Sin operador de incremento
-    i += 4;        // Con operador incrementador
+    i += 4;         // Con operador incrementador
     i -= 2;
     i /= 5;
     i *= 10;
 
-    // + Operador unitario
+    // + Operador unitario ->> Solo en suma y resta
 
     let f =2;
+    //console.log(++ f);
+    //console.log(++ f);
 
-    f ++;
-    f --;
+    f ++;           // Aumentando en un solo valor, de uno en uno
+    f --;           // Disminiyendo de uno en uno
 
-    
+    ++ f;           // No es la mas adecuada
+    -- f;
+    console.log(f)
 
+    /* Operadores logicos
+        ! - Not     ->> Negacion // Niega, lo que es verdadero lo vuelve falso y visceversa
+        || - Or     ->> El ó     // Cuando tengo 2 o mas condiciones, con una que se cumpla(que sea VERDADERA), "or" sera TRUE ->> Validara
+        && - and    ->> El y     // Cuando todas las condiciones cumplen, es decir que (todas sean VERDADERAS), "and" sera TRUE ->> Validara
+     */
 
-    console.log(i)
+    //not
+    console.log(!true);                // ->> Cambia el resultado final.
 
+    //or
+    console.log((9===9) || ("9"===9));    // ->> Cuando una de sus condiciones cumple.
+
+    //and
+    console.log((9===9) && ("9"===9 ));    // ->> Cuando todas sus condiciones cumplen.
 
 
 </script>
